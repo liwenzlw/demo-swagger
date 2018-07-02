@@ -1,0 +1,15 @@
+server:
+  port: 12058
+security:
+  basic:
+    enabled: true
+cas:
+  server:
+    host:
+      url: http://v5test.klxuexi.org:20900
+      login_url: ${cas.server.host.url}/login
+      logout_url: ${cas.server.host.url}/logout?service=${app.server.host.url}
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://jack.ma:1qaz2wsx@localhost:10805/eureka/
